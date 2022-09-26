@@ -1,0 +1,82 @@
+/* For Media queries */
+/* In Progress */
+
+@media (max-width: 376px) {
+  #routes {
+    display: none;
+  }
+  .menu-img {
+    display: none;
+  }
+
+  .hero {
+    background: #1d2026;
+    min-height: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    color: #fff;
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+  }
+
+  .lamp-container {
+    position: absolute;
+    top: 63%;
+    margin-left: 220px;
+    width: unset;
+  }
+
+  .lamp {
+    width: 50px;
+    rotate: 90deg;
+  }
+
+  .light {
+    position: absolute;
+    top: 62px;
+    left: -88px;
+
+    transform: translate(-50%);
+    rotate: 90deg;
+    width: 84px;
+    margin-left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .text-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 24px;
+  }
+  .text-container h1 {
+    font-size: 56px;
+    font-weight: 400;
+  }
+
+  .active {
+    background-color: green;
+  }
+  .active .main-span {
+    background: #fff;
+    position: relative;
+    margin-left: 31px;
+  }
+
+  .active .dot {
+    background: #7dce13;
+    outline: #7dce13 solid 4px;
+    outline-offset: 2px;
+  }
+
+  .on {
+    opacity: 1;
+  }
+}
