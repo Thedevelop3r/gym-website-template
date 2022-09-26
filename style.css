@@ -80,7 +80,7 @@ button .main-span {
 
 .dot {
   display: block;
-  background: #ff7700;
+  background: red;
   height: 6px;
   width: 6px;
   border-radius: 50%;
