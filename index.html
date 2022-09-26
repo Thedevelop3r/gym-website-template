@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="Navbar-container">
-      <div class="blockone">
-        <h1 class="logo">Logo</h1>
-        <h1 class="logotitle">GYMBUDDY</h1>
-      </div>
-      <div class="blocktwo">
-        <ul class="navlinks">
-          <li>Home</li>
-          <li>Blog</li>
-          <li>Dowloads</li>
-          <li>About Us</li>
-        </ul>
-      </div>
-    </div>
-    <!-- Body Section -->
-    <div class="body">
-        <!-- first section-->
-      <div class="intro-container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" class="menu-img">
+            <img src="images/logo.png" class="logo">
 
-   
-            <div class="intro-c1">
-          <h1 class="c1-title" >Gym Desire</h1>
-          <p class="c1-p">Get Your all fitness in one place with our best trainers.
-            lorem epsom de potsa gym da pathe and dole shole.
-          </p>
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Antique</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="togglebtn()" id="btn"><span id="btn-span"></span></button>
+        </nav>
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="lighton">
         </div>
-        <div class="intro-c2">
-            <img class="intro-c2-img" src="https://www.bodybuilding.com/images/2019/november/maximum-muscle-main-header-logo-1920x1080.jpg" alt="body-builder">
+        <div class="text-container">
+            <h1>Best Lighting Offer</h1>
+            <p>We Offer Best lighting offer in the town with minimun charges and best quality assurance.</p>
+            <a href="">Visit Lights</a>
         </div>
-      
-        
-      </div>
-
-
 
     </div>
-  </body>
+    
+    <script>
+        let btn = document.getElementById("btn");
+        let btnSpan = document.getElementById("btn-span");
+        let light = document.getElementById("lighton");
+
+        // trigger the active setting/class.
+
+        function togglebtn(){
+            btn.classList.toggle("active");
+            // btnSpan.classList.toggle("active span");
+            light.classList.toggle("on");
+        }
+
+
+
+    </script>
+</body>
 </html>
