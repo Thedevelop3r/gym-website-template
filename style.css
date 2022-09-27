@@ -148,9 +148,8 @@ button .main-span {
 
 .active .dot {
   background: #7dce13;
-  outline:#7dce13 solid 4px;
+  outline: #7dce13 solid 4px;
   outline-offset: 2px;
-  
 }
 
 .on {
